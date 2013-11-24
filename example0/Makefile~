@@ -1,0 +1,26 @@
+ifeq ($(OS),Windows_NT)
+arch=$(OS)
+else
+arch=$(shell uname -a)
+endif
+
+
+builddir=build.$(arch)
+
+project=example
+
+export vendor=../3pty
+
+
+all ::  dirs
+	gnatmake -XPARAFFIN_ROOT=$(vendor)/paraffin-code -P $(project).gpr  
+
+dirs ::
+	mkdir -p ./build.$(arch)
+
+clean ::
+	gnatclean -P $(project).gpr
+	rm -rf ./build 
+
+distclean :: clean
+	rm -rf ./fontconfig 

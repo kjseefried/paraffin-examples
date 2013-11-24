@@ -1,0 +1,191 @@
+V "GNAT Lib v2013"
+A -g
+A -gnat12
+A -gnatf
+A -gnatwc
+A -gnatw.c
+A -gnatwf
+A -gnatw.h
+A -gnatwj
+A -gnatw.i
+A -gnatwk
+A -gnatwm
+A -gnatw.o
+A -gnatwp
+A -gnatw.p
+A -gnatwr
+A -gnatw.r
+A -gnatw.s
+A -gnatwt
+A -gnatw.t
+A -gnatwu
+A -gnatw.u
+A -gnatw.w
+A -gnatw.x
+A -gnatya
+A -gnatyA
+A -gnatyb
+A -gnatyB
+A -gnatyc
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyI
+A -gnatyk
+A -gnatyl
+A -gnatyn
+A -gnatym
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnatA
+P SS ZX
+
+RN
+RR NO_ASYNCHRONOUS_CONTROL
+RV NO_CALENDAR
+RV NO_DELAY
+RR NO_DYNAMIC_ATTACHMENT
+RR NO_ENTRY_CALLS_IN_ELABORATION_CODE
+RR NO_ENTRY_QUEUE
+RR NO_EXCEPTION_REGISTRATION
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IO
+RR NO_INITIALIZE_SCALARS
+RR NO_LOCAL_TIMING_EVENTS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RR NO_STREAM_OPTIMIZATIONS
+RR NO_STREAMS
+RR NO_TASK_TERMINATION
+RV NO_DEFAULT_INITIALIZATION
+RR IMMEDIATE_RECLAMATION
+RR NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RR NO_IMPLEMENTATION_ATTRIBUTES
+RR NO_IMPLEMENTATION_IDENTIFIERS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_IMPLEMENTATION_UNITS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RR NO_WIDE_CHARACTERS
+RV SPARK
+RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
+
+U log%b			log.adb			c92e5987 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar%s	a-calend.adb		a-calend.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.task_identification%s  a-taside.adb	a-taside.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.img_lld%s	s-imglld.adb		s-imglld.ali
+W system.img_real%s	s-imgrea.adb		s-imgrea.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U log%s			log.ads			e1806eae EE NE OO PK
+
+D ada.ads		20130417131022 3ffc8e18
+D a-calend.ads		20130417131018 d86d6c8c
+D a-except.ads		20130417131018 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131020 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-taside.ads		20130417131022 a4888134
+D a-textio.ads		20130417131022 386df5d4
+D a-unccon.ads		20130417131022 f9eb8f06
+D interfac.ads		20130417131026 cb4a8015
+D i-c.ads		20130417131026 5421119b
+D i-cstrin.ads		20130417131026 341d0ddf
+D i-cstrea.ads		20130417131026 8128536b
+D log.ads		20131005195512 e1806eae
+D log.adb		20131005195512 6c262f45
+D system.ads		20130417131036 5fc8ae56
+D s-atacco.ads		20130417131028 4c36d12f
+D s-conca3.ads		20130417131028 762a026a
+D s-crtl.ads		20130417131028 dfcfca61
+D s-ficobl.ads		20130417131028 55a71d43
+D s-finmas.ads		20130417131028 b95bb341
+D s-finroo.ads		20130417131028 4ff27390
+D s-imglld.ads		20130417131030 f3220969
+D s-imgrea.ads		20130417131030 c7a851e2
+D s-multip.ads		20130417131030 38ac9f73
+D s-osinte.ads		20130417131030 ecf1fbfd
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-secsta.ads		20130417131032 eea35a36
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stausa.ads		20130417131032 017a0a05
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-tasinf.ads		20130417131032 859198ad
+D s-taspri.ads		20130417131032 196697f7
+D s-taskin.ads		20130417131032 59e95256
+D s-traent.ads		20130417131032 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+D s-win32.ads		20130417131034 e5a79fe6
+X 1 ada.ads
+16K9*Ada 19e8 16|27r6 27r35 28r6 28r35 29r6 29r35
+X 2 a-calend.ads
+36K13*Calendar 375e17 16|28w10 28r39
+38I9*Time 16|34r20
+52V13*Clock{38I9} 16|34s28 78s35
+94V14*"+"{38I9} 16|88s38
+97V14*"-"{duration} 16|78s41
+X 8 a-taside.ads
+39K13*Task_Identification 72e28 16|29w10 29r39
+43P9*Task_Id(40|957R9)
+51V13*Image{string} 16|38s14
+53V13*Current_Task{43P9} 16|38s21
+X 9 a-textio.ads
+49K13*Text_IO 471e16 16|27w10 27r39
+52P9*File_Type(369R9) 16|33r20
+53n32*Out_File{53E9} 16|96r58
+86U14*Create 16|96s7
+87p7 File{52P9} 16|96r15
+88e7 Mode{53E9} 16|96r50
+89s7 Name{string} 16|96r36
+98U14*Close 16|104s7
+107V13*Is_Open{boolean} 16|49s10 69s10 80s10
+142U14*Flush 16|85s10
+259U14*Put_Line 16|50s10 70s10 81s10
+263U14*Put_Line 16|47s7 59s7 68s7
+X 15 log.ads
+23K9*Log 35l5 35e8 16|31b14 107l5 107t8
+25U14*Comment 25>23 16|44b14 52l8 52t15
+25s23 S{string} 16|44b23 45r38
+26U14*Result 26>22 16|57b14 60l8 60t14
+26s22 S{string} 16|57b22 59r17
+27U14*Error 27>21 16|65b14 72l8 72t13
+27s21 S{string} 16|65b21 66r38
+29U14*Report_Progress 29>31 16|77b14 89l8 89t23
+29f31 Progress{float} 16|77b31 82r41
+30U14*Open 30>20 16|94b14 97l8 97t12
+30s20 Name{string} 16|94b20 96r44
+31U14*Close 16|102b14 105l8 105t13
+33i4*Error_Counter{natural}
+X 16 log.adb
+33p4 Report_File{9|52P9} 49r19 50r20 69r19 70r20 80r19 81r20 85r17 96m23
+. 96r23 104m14 104r14
+34i4 Last_Progress{2|38I9} 78r43 88m7 88r24
+36V13 Format{string} 36b13 36>21 39l8 39t14 45s30 66s30
+36s21 S{string} 38r43
+45a7 T{string} 47r17 50r33
+66a7 T{string} 68r17 70r33
+78o7 Used{duration} 84r38 88r40
+X 33 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 40 s-taskin.ads
+957R9*Ada_Task_Control_Block
+

@@ -1,0 +1,32 @@
+project Example is
+
+   type OS_Type is ("Any", "Linux", "BSD", "MacOS_X", "HPUX", "IRIX", "Windows", "VMS");
+   OS : OS_Type := external ("PARAFFIN_OS", "Any");
+   OS : OS_Type := external ("PARAFFIN_OS", "Any");
+   ROOT := external( "PARAFFIN_ROOT", "../paraffin" );
+
+   for Source_Dirs use ( ROOT & "/paraffin-src/**", "../common/", ".");
+
+   case OS is
+     when "Linux" =>
+        for Ignore_Source_Sub_Dirs use ("windows", "all_targets");
+     when others =>
+        for Ignore_Source_Sub_Dirs use ("windows", "linux");
+   end case;
+
+   for Object_Dir use "build";
+   for Exec_Dir use "build";
+
+   package Compiler is
+      for Default_Switches ("ada") use ("-gnat12", "-gnatf", "-gnatwc.cf.hj.ikm.op.pr.r.st.tu.u.w.x", "-gnatyaAbBcefhiIklnmprStux");
+   end Compiler;
+
+   package Builder is
+      for Default_Switches ("ada") use ("-g", "-s");
+      for Global_Configuration_Pragmas use "global_pragmas";
+   end Builder;
+
+   for Main use ("example1.adb");
+
+end Example;
+

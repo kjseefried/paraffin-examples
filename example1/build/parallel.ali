@@ -1,0 +1,168 @@
+V "GNAT Lib v2013"
+A -g
+A -gnat12
+A -gnatf
+A -gnatwc
+A -gnatw.c
+A -gnatwf
+A -gnatw.h
+A -gnatwj
+A -gnatw.i
+A -gnatwk
+A -gnatwm
+A -gnatw.o
+A -gnatwp
+A -gnatw.p
+A -gnatwr
+A -gnatw.r
+A -gnatw.s
+A -gnatwt
+A -gnatw.t
+A -gnatwu
+A -gnatw.u
+A -gnatw.w
+A -gnatw.x
+A -gnatya
+A -gnatyA
+A -gnatyb
+A -gnatyB
+A -gnatyc
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyI
+A -gnatyk
+A -gnatyl
+A -gnatyn
+A -gnatym
+A -gnatyp
+A -gnatyr
+A -gnatyS
+A -gnatyt
+A -gnatyu
+A -gnatyx
+A -gnatA
+P SS ZX
+
+RN
+RR NO_ASYNCHRONOUS_CONTROL
+RR NO_DYNAMIC_ATTACHMENT
+RV NO_ENUMERATION_MAPS
+RR NO_ENTRY_CALLS_IN_ELABORATION_CODE
+RR NO_ENTRY_QUEUE
+RR NO_EXCEPTION_REGISTRATION
+RV NO_IMPLICIT_CONDITIONALS
+RR NO_INITIALIZE_SCALARS
+RR NO_LOCAL_TIMING_EVENTS
+RV NO_SECONDARY_STACK
+RR NO_STREAM_OPTIMIZATIONS
+RR NO_STREAMS
+RR NO_TASK_TERMINATION
+RR IMMEDIATE_RECLAMATION
+RR NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RR NO_IMPLEMENTATION_ATTRIBUTES
+RR NO_IMPLEMENTATION_IDENTIFIERS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_IMPLEMENTATION_UNITS
+RV NO_OBSOLESCENT_FEATURES
+RR NO_WIDE_CHARACTERS
+RV SPARK
+RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
+
+U parallel%b		parallel.adb		deaa5d16 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.environment_variables%s  a-envvar.adb	a-envvar.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.val_bool%s	s-valboo.adb		s-valboo.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+
+U parallel%s		parallel.ads		2fa7c1c6 NE OO PR PK
+W system%s		system.ads		system.ali
+W system.multiprocessors%s  s-multip.adb	s-multip.ali
+
+D ada.ads		20130417131022 3ffc8e18
+D a-envvar.ads		20130417131018 00080416
+D a-unccon.ads		20130417131022 f9eb8f06
+D parallel.ads		20130606041022 170b5eb5
+D parallel.adb		20130504055652 c9a907b5
+D system.ads		20130417131036 5fc8ae56
+D s-multip.ads		20130417131030 38ac9f73
+D s-secsta.ads		20130417131032 eea35a36
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-valboo.ads		20130417131034 fa926c1e
+D s-valint.ads		20130417131034 48a52a3f
+X 1 ada.ads
+16K9*Ada 19e8 5|30r6 31r5
+X 2 a-envvar.ads
+19K13*Environment_Variables 69e30 5|30w10 52r9 56r13 70r13 74r16
+22V13*Value{string} 5|56s35 74s38
+22s20 Name{string} 5|56r42 74r45
+34V13*Exists{boolean} 5|52s31 70s35
+34s21 Name{string} 5|53r12 71r13
+X 4 parallel.ads
+52K9*Parallel 200l5 200e13 5|33b14 143l5 143t13
+59I12*CPU_Count{7|21I12} 61r35
+61V13*Number_Of_CPUs=62:37{7|21I12} 5|77s55 139s23 140s39
+64I12*CPU{7|21I12}
+68N4*Max_Workers 69r41
+69I9*Worker_Count_Type<short_integer> 70r8 73r6 73r35 80r37 86r40 98r17 189r17
+. 5|88r17 111r17 134r14 136r14
+72I12*Positive_Worker_Count{69I9} 75r25 77r41 190r37 5|36r22 66r41 73r32
+. 77r32 92r36 112r37 117r17
+75I12*Worker_Id{72I12}
+77V13*Default_Worker_Count{72I12} 5|66b13 83l8 83t28
+79V13*Optimal_Worker_Count{69I9} 80>7 5|94s10 115s17 132b13 141l8 141t28
+80i7 Iterations{positive} 5|133b7 138r13 140r14
+86i4*Use_Optimal_Worker_Count{69I9} 98r38 5|88r38 93r23 114r20
+92N4*Default_Chunk_Size 100r41 5|90r41 97r33
+97V13*Determine_Chunk_Size{positive} 98>7 99>7 100>7 5|87b13 106l8 106t28
+98i7 Workers{69I9} 5|88b7 93r13 94r49
+99i7 Iterations{positive} 5|89b7 94r32 101r16
+100i7 Requested_Chunk_Size{natural} 5|90b7 97r10 104r17
+104I12*Worker_Priority{6|98I12} 107r39
+107i4*Default_Worker_Priority{104I12}
+114I12*Work_Budget_Limit{integer} 115r37
+115i4*Unlimited_Work_Budget{114I12}
+120N4*Default_Worker_Storage_Size
+121N4*Minimum_Worker_Storage_Size
+125E9*Split_Progress 125e50
+125n28*Pre_Split{125E9}
+125n39*Post_Split{125E9}
+141R9*Work_Seeking_State 144e17 146r19
+143b10*Seeking_Work{boolean}
+170I12*Work_Stealing_Loop_Index{integer} 174r18
+172R9*Atomic_Loop_Index_Type 175e17 176r19 178r34 179r26 5|41r26 125r34
+174i10*Value{170I12} 5|43r16 43r27 127m12 127r26
+178U14*Next 178=20 5|125b14 128l8 128t12
+178r20 Item{172R9} 5|125b20 127m7 127r21
+179V14*"<="{boolean} 179>19 179>22 5|41b14 44l9 44t12
+179r19 L{172R9} 5|41b19 43r14
+179r22 R{172R9} 5|41b22 43r25
+184I9*Stack_Percentage<short_short_integer> 186r43
+186i4*Default_Maximum_Stack_Depth{184I9}
+188V13*Effective_Worker_Count{72I12} 189>7 190>7 5|110b13 121l8 121t30
+189i7 Workers{69I9} 5|111b7 114r10 119r38
+190i7 Iterations{positive} 5|112b7 115r39 119r16
+198V13 Debug_Logging{boolean} 5|46b13 62l8 62t21
+X 5 parallel.adb
+35b4 Worker_Count_Initialized{boolean} 69r14 75m13 80m10
+36i4 Default_Workers{4|72I12} 73m13 77m13 82r14
+38b4 Debug_Initialized{boolean} 51r14 57m10
+39b4 Debug_Mode{boolean} 55m10 60r14
+47a7 Debugging_Enabled{string} 53r20 56r50
+67a7 Worker_Count{string} 71r21 74r53
+92i7 Effective_Workers{4|72I12} 101r39
+X 6 system.ads
+37K9*System 4|50r6 59r25 62r14 64r19 104r31 105r6 105r31 109r8 196r8 6|196e11
+97I12*Any_Priority{integer}
+98I12*Priority{97I12} 4|104r38 105r13 105r38
+101i4*Default_Priority{98I12} 4|109r15
+X 7 s-multip.ads
+16K16*Multiprocessors 4|50w13 59r32 62r21 64r26 7|28e27
+19I9*CPU_Range<integer>
+21I12*CPU{19I9} 4|59r48 64r42
+25V13*Number_Of_CPUs{21I12} 4|62r37
+
