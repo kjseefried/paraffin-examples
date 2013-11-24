@@ -6,11 +6,11 @@ project Example is
    BUILD_DIR := external( "BUILD_DIR", "./build-" & OS );
    BIN_DIR := external( "BIN_DIR", "./bin-" & OS );
 
-   for Source_Dirs use ( ROOT & "/paraffin/**", "../common/", ".");
+   for Source_Dirs use ( "../common/**", ROOT & "/paraffin/**", ".");
 
    case OS is
      when "Linux" =>
-        for Ignore_Source_Sub_Dirs use ("windows", "all_targets");
+        for Ignore_Source_Sub_Dirs use ("Windows", "all_targets");
      when others =>
         for Ignore_Source_Sub_Dirs use ("Linux" , "all_targets" );
    end case;

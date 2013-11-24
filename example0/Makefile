@@ -15,7 +15,8 @@ builddir=build-$(sys)
 bindir=bin-$(sys)
 
 project=example
-export vendor=../3pty
+vendor=../../3pty
+
 
 env= -XPARAFFIN_ROOT=$(vendor)/paraffin-code \
 	-XOS=$(os) \
